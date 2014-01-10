@@ -1,0 +1,87 @@
+.wrap,
+.wrap a {
+	-webkit-font-smoothing: antialiased !important;
+	-moz-osx-font-smoothing: grayscale;
+	font-smoothing: antialised;
+}
+
+.sort-wrap {
+	display: block;
+}
+.sort-wrap-inner {
+	float: left;
+	margin-right: 3%;
+	width: 45%;
+}
+
+.infomatic {
+	list-style: inside square;
+	margin: 0 0 1rem 0.5rem;
+}
+
+.droptrue {
+	width: 100%;
+	list-style: none;
+	border: 1px solid #ccc;
+	padding: 10px 10px 5px 10px;
+}
+.droptrue li {
+	margin: 0 0 5px 0;
+	padding: 5px;
+	min-height: 1.5rem;
+}
+html>body .droptrue li {
+	min-height: 1.5rem;
+}
+
+.droptrue li:hover {
+	cursor: pointer;
+}
+.droptrue li.ui-sortable-helper {
+	cursor: move;
+}
+
+.droptrue h3 {
+	font-size: 1.2rem;
+	line-height: 1rem;
+	margin: 0 0 .3rem 0;
+	padding: 0;
+}
+
+.droptrue li h4 {
+	font-size: 1rem;
+	line-height: 1rem;
+	margin: 0 0 .3rem 0;
+	padding: 0;
+}
+.droptrue li p {
+	font-size: 0.8rem;
+	line-height: 1rem;
+	margin: 0;
+	padding: 0;
+}
+.ui-state-highlight {
+	min-height: 1.5rem;
+}
+
+.sort-wrap > hr {
+	height: 1px;
+	border: 0;
+	border-top: 1px solid transparent;
+	background: transparent;
+	margin: auto;
+	margin-bottom: 10px;
+	width: 100%;
+	clear: both;
+	display: block;
+}
+	
+div#publishing-action {
+	margin-top: 1.5rem !important;
+}
+
+input#save {
+	display: inline-block;
+	clear: both;
+}
+

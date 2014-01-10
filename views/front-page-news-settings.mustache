@@ -1,0 +1,61 @@
+<div class="wrap">
+
+	<h2>Select & Sort News</h2>
+
+	<div class="sort-wrap">
+	
+		<div class="sort-wrap-inner">
+		
+			<h3>Selected News</h3>
+
+			<ul class="infomatic">
+				<li>This list contains all the selected news posts in the order they will be displayed.</li>
+				<li>The posts are listed in the order they will be displayed.</li>
+				<li>To change the order, drag and drop a post up or down in the list.</li>
+				<li>To remove a post from the list, drag it right from this list to the <strong>Available News</strong> list.</li>
+			</ul>
+
+			<ul id="selected" class="connectedSortable droptrue">
+				{{#fpn_news}}
+				<li class="ui-state-default" data-id="{{id}}">
+					<h4>{{title}}</h4>
+					<p>{{date}}</p>
+				</li>
+				{{/fpn_news}}
+			</ul>
+
+		</div>
+				
+		<div class="sort-wrap-inner">
+
+			<h3>Available News</h3>
+		
+			<ul class="infomatic">
+				<li>This list contains all the remaining available news posts, i.e. those not selected for display.</li>
+				<li>The posts in this list are in descending date order, i.e. the latest first.</li>
+				<li>Drag posts left from this list and drop onto the <strong>Selected News</strong> list.</li>
+				<li>When you're happy just click the <strong>Update</strong> button.</li>
+			</ul>
+
+			<ul id="available" class="connectedSortable droptrue">
+				{{#all_news}}
+				<li class="ui-state-default" data-id="{{id}}">
+					<h4>{{title}}</h4>
+					<p>{{date}}</p>
+				</li>
+				{{/all_news}}
+			</ul>
+
+		</div>
+					
+		<hr>
+
+		<div id="publishing-action">
+			<span class="spinner"></span>
+			<input name="save" type="submit" class="button button-primary button-large" id="save" accesskey="s" value="Update">
+		</div>
+	
+	</div>
+
+</div>
+

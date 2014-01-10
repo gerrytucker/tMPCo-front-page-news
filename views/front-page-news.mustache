@@ -1,0 +1,19 @@
+<div class="news">
+
+	<h3>Recent News</h3>
+
+	<ul>
+	
+		{{#news}}
+		<li>
+			<h4>{{title}}</h4>
+			<div class="clearfix" {{#first}}style="display:block"{{/first}}>
+				<img class="align{{image.align}}" src="{{image.src}}" height="{{image.height}}" width="{{image.width}}">
+				{{&content}}
+			</div>
+		</li>
+		{{/news}}
+
+	</ul>
+
+</div>
